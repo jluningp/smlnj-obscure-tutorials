@@ -16,9 +16,10 @@ string : stream -> string -> unit
 ...
 ```
 
-`CompilerPPTable.install_pp` takes in a path to a (monomorphic) type, a pretty printing function which takes in a stream and a 
-value of that type and prints it, and adds that pretty printer to the pretty printing table. Whenever a value of 
-that type is typed into the REPL, this pretty printer will be looked up in the pretty printing table and called.
+`CompilerPPTable.install_pp` takes in a path to a (monomorphic, generative) datatype, a pretty printing function which takes 
+in a stream and a value of that type and prints it, and adds that pretty printer to the pretty printing table. 
+Whenever a value of that type is typed into the REPL, this pretty printer will be looked up in the pretty printing table 
+and called.
 
 `PrettyPrint.string` is the primary method of creating a pretty printer. It should be called from within the 
 pretty printing function with the string that should be output for that input value. 
