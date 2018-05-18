@@ -73,5 +73,6 @@ all the structures it's contained in and its own name).
 ## Limitations
 
 Pretty printers can only be installed for monomorphic datatypes, which greatly limits their usefulness. It'd be 
-wonderful to be able to pretty print custom-defined lists, sequences, etc, but sadly this isn't possible.
-
+wonderful to be able to pretty print custom-defined lists, sequences, etc, but sadly this isn't possible. Strictly 
+speaking, SML/NJ doesn't throw an error when you attempt to install a pretty printer for a polymorphic datatype. It's 
+just impossible to define a useful printer, since we have no way of printing something of type 'a. 
