@@ -71,6 +71,6 @@ all the structures it's contained in and its own name).
 
 ## Limitations
 
-Pretty printers can only be installed for monomorphic datatypes, which greatly limits their usefulness. I'd be 
-wonderful to be able to pretty print custom-defined lists, sequences, etc, but sadly this isn't possible. 
+Pretty printers can only be installed for monomorphic datatypes, which greatly limits their usefulness. It'd be 
+wonderful to be able to pretty print custom-defined lists, sequences, etc, but sadly this isn't possible.
 
